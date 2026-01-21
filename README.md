@@ -2,59 +2,44 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-Serverless Cloud Dictionary
+SERVERLESS CLOUD DICTIONARY
 
-This project is a Serverless Cloud Dictionary Application built using AWS services.
-It allows users to search for cloud technology terms and instantly view their definitions through a simple web interface.
+This project is a serverless web application that allows users to search for cloud computing terms and view their definitions. It is built using AWS services and follows a fully serverless architecture.
 
-The application follows a serverless architecture, meaning there are no traditional servers to manage. All backend services are handled by AWS.
+The frontend is developed with React and hosted on AWS Amplify. All backend requests are handled through API Gateway and AWS Lambda, with DynamoDB used for storing cloud term definitions.
 
-🔗 Project Links
+PROJECT OVERVIEW
 
-GitHub Repository:
-https://github.com/your-username/your-repo-name
+The frontend is built using React and hosted on AWS Amplify.
 
-Live Application (AWS Amplify):
-https://your-app-name.amplifyapp.com
+User requests are routed through API Gateway to a Lambda function, which retrieves data from DynamoDB.
 
-Architecture Diagram (Lucidchart):
-https://lucid.app/your-diagram-link
+The application follows a fully serverless architecture with minimal infrastructure management.
 
-🛠️ Technologies Used
+SETUP OVERVIEW
 
-AWS Amplify – Hosts the React frontend
+Clone the project repository and install the required dependencies
 
-AWS Lambda – Handles backend logic
+Create a new GitHub repository and push the project code
 
-AWS API Gateway – Manages API requests
+Deploy the frontend using AWS Amplify
 
-AWS DynamoDB – Stores cloud terms and definitions
+Create a DynamoDB table to store cloud terms and definitions
 
-IAM – Manages access and security
+Upload the initial dataset using the AWS CLI
 
-✨ Features
+Create a Lambda function to fetch definitions from DynamoDB
 
-Search for cloud-related terms
+Configure API Gateway to expose the Lambda function through a REST endpoint
 
-View clear and simple definitions
+Update the frontend with the API Gateway URL and redeploy
 
-Fast, serverless backend
+Each step requires basic AWS configuration and permissions setup.
 
-Secure AWS infrastructure
 
-Publicly accessible web app
+HOW THE APPLICATION WORKS
 
-📂 Project Overview
-
-The frontend is built with React and hosted on AWS Amplify.
-User requests are sent through API Gateway, which triggers an AWS Lambda function.
-The Lambda function fetches the requested term from DynamoDB and returns the definition to the user.
-
-This design keeps the application lightweight, scalable, and easy to maintain.
-
-🚀 How It Works
-
-The user enters a cloud term in the web app
+The user searches for a cloud term
 
 The request is sent to API Gateway
 
@@ -62,18 +47,44 @@ Lambda processes the request
 
 DynamoDB returns the definition
 
-The result is shown to the user
+The frontend displays the result
 
-🌱 Future Improvements
+
+Live Application:
+<img width="1791" height="841" alt="SAVED-1" src="https://github.com/user-attachments/assets/2ba61924-3674-446f-9e2b-5ad65cb5c52a" />
+
+
+
+Architecture Diagram (Lucidchart):
+<img width="1314" height="674" alt="Lucid-react" src="https://github.com/user-attachments/assets/b0cd9dd7-a02f-487f-aa83-dbe17cdbfd50" />
+
+Technologies Used
+
+AWS Amplify
+
+AWS Lambda
+
+AWS API Gateway
+
+AWS DynamoDB
+
+IAM
+
+React
+
+
+
+AUTHOR
+
+Name: Komolafe Temitope
+
+
+FUTURE ENHANCEMENT
 
 Add more cloud terms
 
 Improve search flexibility
 
-Add categories for terms
+Add categories
 
 Enhance the UI
-
-🧹 Clean-Up (Optional)
-
-When the project is no longer needed, AWS resources such as Lambda, DynamoDB, API Gateway, Amplify, and IAM roles can be deleted to avoid unnecessary charges.
