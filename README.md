@@ -2,69 +2,78 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+Serverless Cloud Dictionary
 
-In the project directory, you can run:
+This project is a Serverless Cloud Dictionary Application built using AWS services.
+It allows users to search for cloud technology terms and instantly view their definitions through a simple web interface.
 
-### `npm start`
+The application follows a serverless architecture, meaning there are no traditional servers to manage. All backend services are handled by AWS.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+🔗 Project Links
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+GitHub Repository:
+https://github.com/your-username/your-repo-name
 
-### `npm test`
+Live Application (AWS Amplify):
+https://your-app-name.amplifyapp.com
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Architecture Diagram (Lucidchart):
+https://lucid.app/your-diagram-link
 
-### `npm run build`
+🛠️ Technologies Used
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+AWS Amplify – Hosts the React frontend
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+AWS Lambda – Handles backend logic
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+AWS API Gateway – Manages API requests
 
-### `npm run eject`
+AWS DynamoDB – Stores cloud terms and definitions
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+IAM – Manages access and security
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+✨ Features
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Search for cloud-related terms
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+View clear and simple definitions
 
-## Learn More
+Fast, serverless backend
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Secure AWS infrastructure
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Publicly accessible web app
 
-### Code Splitting
+📂 Project Overview
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+The frontend is built with React and hosted on AWS Amplify.
+User requests are sent through API Gateway, which triggers an AWS Lambda function.
+The Lambda function fetches the requested term from DynamoDB and returns the definition to the user.
 
-### Analyzing the Bundle Size
+This design keeps the application lightweight, scalable, and easy to maintain.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+🚀 How It Works
 
-### Making a Progressive Web App
+The user enters a cloud term in the web app
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+The request is sent to API Gateway
 
-### Advanced Configuration
+Lambda processes the request
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+DynamoDB returns the definition
 
-### Deployment
+The result is shown to the user
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+🌱 Future Improvements
 
-### `npm run build` fails to minify
+Add more cloud terms
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Improve search flexibility
+
+Add categories for terms
+
+Enhance the UI
+
+🧹 Clean-Up (Optional)
+
+When the project is no longer needed, AWS resources such as Lambda, DynamoDB, API Gateway, Amplify, and IAM roles can be deleted to avoid unnecessary charges.
