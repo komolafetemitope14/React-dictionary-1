@@ -1,5 +1,5 @@
 {
-    "<YOUR_TABLE_NAME>": [
+    "CloudDefinitions": [
       {
         "PutRequest": { 
           "Item": {
