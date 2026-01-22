@@ -74,11 +74,6 @@ React
 
 
 
-AUTHOR
-
-Name: Komolafe Temitope
-
-
 FUTURE ENHANCEMENT
 
 Add more cloud terms
@@ -88,3 +83,8 @@ Improve search flexibility
 Add categories
 
 Enhance the UI
+
+
+👨‍💻 Author
+
+Komolafe Temitope
